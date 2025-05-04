@@ -1,0 +1,56 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+8 shift+7",
+        "command": "workbench.action.installCommandLine"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "space t",
+        "command": "workbench.action.showAllEditors",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "command": "workbench.action.nextEditorInGroup",
+        "key": "tab",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorTextFocus"
+    },
+    {
+        "key": "shift-tab",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && editorTextFocus"
+    },
+    // coding
+    {
+        "key": "shift-j",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "vim.mode != 'Insert' && editorTextFocus" 
+    },
+    {
+        "key": "shift-k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "vim.mode != 'Insert' && editorTextFocus" 
+    },
+    {
+        "key": "shift-k",
+        "command": "editor.action.showHover",
+        "when": "vim.mode == 'Normal' && editorTextFocus" 
+    }
+    
+
+]
